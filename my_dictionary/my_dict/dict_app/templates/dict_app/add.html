@@ -1,0 +1,25 @@
+{% extends 'dict_app/base.html' %}
+
+{% block title %}
+    Addition a new word
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+	    <div id="featured-wrapper">
+		    <div id="featured" class="extra2 margin-btm container">
+			    <div class="main-title">
+				    <h2>Your vocabulary</h2>
+				    <span class="byline">Repeat and memorize twice a day</span> </div>
+					<form method="POST" action="" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="text" id="eng_word" name="eng_word" placeholder="Add an word in English">
+                        <input type="text" id="ru_word" name="ru_word" placeholder="Add an translation">
+						<br>
+						<br>
+						<button class="button" type="submit">Add</button>
+                    </form>
+		    </div>
+	    </div>
+    </div>
+{% endblock %}

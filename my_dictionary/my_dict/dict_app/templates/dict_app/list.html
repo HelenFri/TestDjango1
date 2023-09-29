@@ -1,0 +1,33 @@
+{% extends 'dict_app/base.html' %}
+
+
+{% block title %}
+    Words list
+{% endblock %}
+
+
+{% block content %}
+    <div id="wrapper">
+	    <div id="featured-wrapper">
+		    <div id="featured" class="extra2 margin-btm container">
+			    <div class="main-title">
+				    <h2>Your vocabulary</h2>
+				    <span class="byline">Repeat and memorize twice a day</span> </div>
+					<table border="1" class="words_list" align="center" width="80%">
+						<thead>
+							<tr>
+								<th>The word in the original</th>
+								<th>Translation</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td width="100">txt1</td>
+								<td width="100">txt2</td>
+							</tr>
+						</tbody>
+					</table>
+		    </div>
+	    </div>
+    </div>
+{% endblock %}

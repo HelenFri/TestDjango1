@@ -23,9 +23,9 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Главная страница</a></li>
-				<li><a href="{% url 'list' %}" accesskey="2" title="">Список слов</a></li>
-				<li><a href="{% url 'add' %}" accesskey="3" title="">Добавить слово</a></li>
+				<li	class="{% if page == 'home' %} active {% endif %}"><a href="{% url 'home' %}" title="">Главная страница</a></li>
+				<li class="{% if page == 'list' %} active {% endif %}"><a href="{% url 'list' %}" title="">Список слов</a></li>
+				<li class="{% if page == 'add' %} active {% endif %}"><a href="{% url 'add' %}" title="">Добавить слово</a></li>
 			</ul>
 		</div>
 	</div>
