@@ -21,10 +21,12 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td width="100">txt1</td>
-								<td width="100">txt2</td>
-							</tr>
+						{% for i, j in content.items %}
+        					<tr>
+          						<td>{{ i }}</td>
+          						<td>{{ j }}</td>
+        					</tr>
+      					{% endfor %}
 						</tbody>
 					</table>
 		    </div>
