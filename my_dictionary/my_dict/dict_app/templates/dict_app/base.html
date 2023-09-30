@@ -23,9 +23,12 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li	class="{% if page == 'home' %} active {% endif %}"><a href="{% url 'home' %}" title="">Главная страница</a></li>
-				<li class="{% if page == 'list' %} active {% endif %}"><a href="{% url 'list' %}" title="">Список слов</a></li>
-				<li class="{% if page == 'add' %} active {% endif %}"><a href="{% url 'add' %}" title="">Добавить слово</a></li>
+				<li
+						class="{% if page == 'home' %} active {% endif %}"><a href="{% url 'home' %}" title="">Home page</a></li>
+				<li
+						class="{% if page == 'list' %} active {% endif %}"><a href="{% url 'list' %}" title="">Words list</a></li>
+				<li
+						class="{% if page == 'add' %} active {% endif %}"><a href="{% url 'add' %}" title="">Add a word</a></li>
 			</ul>
 		</div>
 	</div>

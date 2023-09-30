@@ -63,7 +63,14 @@ table
 {
     border: solid; border-color: #8dc63f;
     font-size: 16pt;
-    font-family: inherit
+    font-family: inherit;
+}
+
+td
+{
+    background: #D0F0C0;
+    color: #000000;
+    padding: 15px;
 }
 
 input
